@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Language Translation Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Language Translation Tool</h2>
+
+<textarea id="inputText" placeholder="Enter text"></textarea>
+
+<br><br>
+
+<label>Source:</label>
+<select id="sourceLang">
+<option value="en">English</option>
+<option value="hi">Hindi</option>
+<option value="mr">Marathi</option>
+</select>
+
+<label>Target:</label>
+<select id="targetLang">
+<option value="hi">Hindi</option>
+<option value="en">English</option>
+<option value="mr">Marathi</option>
+</select>
+
+<br><br>
+
+<button onclick="translateText()">Translate</button>
+
+<h3>Translated Text:</h3>
+<p id="outputText"></p>
+
+<button onclick="copyText()">Copy</button>
+<button onclick="speakText()">🔊 Speak</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
